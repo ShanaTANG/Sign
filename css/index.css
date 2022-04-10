@@ -1,0 +1,202 @@
+body{
+    background-image: url("../pictures/bg2.png");
+    background-size: 100% , 100%;
+}
+
+/*----字型----*/
+@font-face {
+    font-family: '清松手寫體1';
+    src: url('../font/清松手寫體1.woff') format("woff"),
+        url('../font/清松手寫體1.ttf') format("truetype"),
+        url('../font/清松手寫體1.eot') format("embedded-opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "清松手寫體1";
+    font-weight: bolder;
+}
+
+/*----上方菜單欄----*/
+header{
+    background-color: #B0D0D3;
+    height: 100px;
+    width: 100%;
+    color: #38405F;
+    text-align: center;
+}
+.menu_title{
+    position: relative;
+    top: 20px;
+    font-size: 50px;
+    text-decoration:none
+}
+.menu_title:hover{
+    text-decoration:none
+}
+
+nav{
+    margin: auto;
+    display: flex;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #B0D0D3;
+}
+
+.menu{
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+nav a{
+    position: relative;
+    padding: 5px 55px;
+    margin: 20px 1px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #38405F;
+    width: 250px;
+}
+nav a:hover{
+    border-radius: 10px;
+    background-color: #ddd;
+    color: #D91E36;
+}
+
+.menu ul{
+    border: #ccc;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 99;
+    top: 120%;
+    min-width: 180px;
+    display: none;
+}
+
+.menu ul li{
+    display: flex;
+    align-items: center;
+    background-color: #B0D0D3;
+    left: -12px;
+    height: 60px;
+    width: 280px;
+}
+
+.menu ul li:last-child{
+    border-bottom: none;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+/*----內容----*/
+.box4{
+    background-color:#362023;
+    border-radius: 10px;
+    width: 900px;
+    height: auto;
+    margin: 50px auto;
+    opacity: 0.9;
+}
+.box_title{
+    color: #FBFFB9;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.impression{
+    padding: 20px;
+    letter-spacing: 5px;
+    line-height: 45px;
+    font-size: 25px;
+    color: #CEDFD9;
+}
+
+/*----意見回饋表單----*/
+form{
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.sheet{
+    display: flex;
+    background-color: #D2F1E4;
+    width: 64%;
+    padding: 30px 50px;
+    margin: auto;
+    letter-spacing: 12px;
+    line-height: 60px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: #1B2845;
+    border-width: 10px;
+    text-align: center;
+    justify-content: space-around;
+}
+@keyframes swing{
+    15%{transform: translateX(5px);}
+    40%{transform: translateX(-5px);}
+    65%{transform: translateX(2px);}
+    85%{transform: translateX(-2px);}
+    100%{transform: translateX(0px);}
+}
+.sheet:hover{
+    animation: swing 1s 1;
+}
+.box{
+    width: 300px;
+    height: 40px;
+}
+.table{
+    margin-top: 50px;
+}
+.title{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "清松手寫體1";
+    text-align: center;
+    letter-spacing: 20px;
+    color: 	#408080;
+    padding: 10px;
+}
+.item{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "清松手寫體1";
+    text-align: right;
+    margin-top: 70px;
+}
+.dot{
+    border-radius: 12px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "清松手寫體1";
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+    width: 100px;
+    background-color: transparent;
+}
+.dot:hover{
+    background-color: #5151A2;
+    color: white;
+}
+div.a{
+    text-align: center;
+}
+
